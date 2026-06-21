@@ -1,0 +1,18 @@
+{
+  "original_name": "vectors.npz",
+  "bytes": 98594781,
+  "sha256": "b1db00e9ad786a3d18682efa9d9ff82e25994f9adc9fe0e9074e39eb1e270bd6",
+  "max_part_mib": 48,
+  "parts": [
+    {
+      "name": "vectors.npz.part-000",
+      "bytes": 50331648,
+      "sha256": "5500e33d49775eefca0ceed129a36d1bbd8b961c24b7e6de031862ceba243be0"
+    },
+    {
+      "name": "vectors.npz.part-001",
+      "bytes": 48263133,
+      "sha256": "fa242f387aa1b931874b47ed58f53160d56856bd1086335c0cdba55a57b1f1df"
+    }
+  ]
+}

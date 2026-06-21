@@ -25,5 +25,5 @@ Processed datasets and split files for the Chapter V noun-compound and idiom emb
 
 - AdMIRe is intentionally excluded.
 - Raw source data is not included in this repository.
-- Full XLM-R embeddings are not included here yet. The GPU extraction job was submitted separately and will write to `embeddings/xlm-roberta-base/all/` in the pipeline workspace when it completes.
+- Full XLM-R embeddings are included under `embeddings/xlm-roberta-base/all/`. `vectors.npz` is stored as 2 shard(s), total bytes `98594781`, sha256 `b1db00e9ad786a3d18682efa9d9ff82e25994f9adc9fe0e9074e39eb1e270bd6`.
 - The latest validation report is in `reports/final_validation_report.md`.

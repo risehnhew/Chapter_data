@@ -2,7 +2,7 @@
   "ok": true,
   "errors": [],
   "warnings": [],
-  "embeddings_present": false,
+  "embeddings_present": true,
   "no_training_run": true,
   "datasets": [
     {
@@ -15,7 +15,7 @@
       "test": 110,
       "has_head_mod_%": 100.0,
       "has_paraphrase_%": 100.0,
-      "contextual_span_success_%": ""
+      "contextual_span_success_%": 0.0
     },
     {
       "dataset": "nctti_ncs",
@@ -27,7 +27,7 @@
       "test": 277,
       "has_head_mod_%": 33.33,
       "has_paraphrase_%": 66.67,
-      "contextual_span_success_%": ""
+      "contextual_span_success_%": 100.0
     },
     {
       "dataset": "semeval2022_task2",
@@ -39,7 +39,7 @@
       "test": 5394,
       "has_head_mod_%": 0.0,
       "has_paraphrase_%": 0.0,
-      "contextual_span_success_%": ""
+      "contextual_span_success_%": 79.76
     },
     {
       "dataset": "ncimp",
@@ -51,7 +51,7 @@
       "test": 370,
       "has_head_mod_%": 100.0,
       "has_paraphrase_%": 100.0,
-      "contextual_span_success_%": ""
+      "contextual_span_success_%": 93.55
     },
     {
       "dataset": "dice",
@@ -63,7 +63,7 @@
       "test": 414,
       "has_head_mod_%": 0.0,
       "has_paraphrase_%": 0.0,
-      "contextual_span_success_%": ""
+      "contextual_span_success_%": 93.95
     }
   ]
 }
