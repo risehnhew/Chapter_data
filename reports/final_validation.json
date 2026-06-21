@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "embeddings_present": false,
+  "no_training_run": true,
+  "datasets": [
+    {
+      "dataset": "nc",
+      "download_status": "partial_or_success",
+      "raw_files": 113,
+      "normalized_rows": 550,
+      "train": 385,
+      "dev": 55,
+      "test": 110,
+      "has_head_mod_%": 100.0,
+      "has_paraphrase_%": 100.0,
+      "contextual_span_success_%": ""
+    },
+    {
+      "dataset": "nctti_ncs",
+      "download_status": "partial_or_success",
+      "raw_files": 51,
+      "normalized_rows": 1383,
+      "train": 968,
+      "dev": 138,
+      "test": 277,
+      "has_head_mod_%": 33.33,
+      "has_paraphrase_%": 66.67,
+      "contextual_span_success_%": ""
+    },
+    {
+      "dataset": "semeval2022_task2",
+      "download_status": "partial_or_success",
+      "raw_files": 66,
+      "normalized_rows": 26965,
+      "train": 18875,
+      "dev": 2696,
+      "test": 5394,
+      "has_head_mod_%": 0.0,
+      "has_paraphrase_%": 0.0,
+      "contextual_span_success_%": ""
+    },
+    {
+      "dataset": "ncimp",
+      "download_status": "partial_or_success",
+      "raw_files": 42,
+      "normalized_rows": 1844,
+      "train": 1290,
+      "dev": 184,
+      "test": 370,
+      "has_head_mod_%": 100.0,
+      "has_paraphrase_%": 100.0,
+      "contextual_span_success_%": ""
+    },
+    {
+      "dataset": "dice",
+      "download_status": "partial_or_success",
+      "raw_files": 32,
+      "normalized_rows": 2066,
+      "train": 1446,
+      "dev": 206,
+      "test": 414,
+      "has_head_mod_%": 0.0,
+      "has_paraphrase_%": 0.0,
+      "contextual_span_success_%": ""
+    }
+  ]
+}
