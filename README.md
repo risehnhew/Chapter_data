@@ -36,3 +36,9 @@ If the unsharded `.npz` file is present directly, no reconstruction is needed fo
 - `reports/embedding_report.md`
 
 The older raw-dataset rebuild outputs are no longer the default dataset in this repository.
+
+<!-- additional-embedding-models:start -->
+## Additional Embedding Models
+
+- `embeddings/BAAI-bge-m3/`: `BAAI/bge-m3` dense embeddings (1024 dimensions, pooling `cls`, L2 normalized `True`).
+<!-- additional-embedding-models:end -->

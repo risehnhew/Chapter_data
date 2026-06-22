@@ -1,0 +1,18 @@
+{
+  "original_name": "row_embeddings.npz",
+  "bytes": 62030315,
+  "sha256": "a6d7f3c094300b4bb411c9bb6c5c6edc1a58cb054dbb11dd8e747c2b2d569444",
+  "sharded": true,
+  "parts": [
+    {
+      "name": "row_embeddings.npz.part-000",
+      "bytes": 50331648,
+      "sha256": "feba81598359caabe493b82857eae6b5f429450f1a0b45bd1747ac3a93ff76e3"
+    },
+    {
+      "name": "row_embeddings.npz.part-001",
+      "bytes": 11698667,
+      "sha256": "5893bbfa2bd18f3ce35025c5f826f94767f38bbbbdd8635ebb5cb4c6216a33f0"
+    }
+  ]
+}

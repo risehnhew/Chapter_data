@@ -1,0 +1,23 @@
+{
+  "model_name": "BAAI/bge-m3",
+  "pooling": "cls",
+  "normalize": true,
+  "max_length": 128,
+  "device": "cpu",
+  "rows": 16429,
+  "source_rows": 16429,
+  "max_rows": null,
+  "unique_texts_embedded": 19488,
+  "unique_texts_total": 19488,
+  "embedding_dim": 1024,
+  "row_arrays": [
+    "expression",
+    "head",
+    "modifier",
+    "paraphrase_canonical",
+    "paraphrase_mean",
+    "mask_head",
+    "mask_modifier",
+    "mask_paraphrase"
+  ]
+}

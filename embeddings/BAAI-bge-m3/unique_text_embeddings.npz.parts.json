@@ -1,0 +1,18 @@
+{
+  "original_name": "unique_text_embeddings.npz",
+  "bytes": 73677509,
+  "sha256": "7f41ceefe0c7d54aa680a35505cc90e85dc6c43135fe3ee9f28b327ea25f628a",
+  "sharded": true,
+  "parts": [
+    {
+      "name": "unique_text_embeddings.npz.part-000",
+      "bytes": 50331648,
+      "sha256": "54b13b7bab301583937fdf7c8ae048b415058f4386afee9de473d4d1cadaf490"
+    },
+    {
+      "name": "unique_text_embeddings.npz.part-001",
+      "bytes": 23345861,
+      "sha256": "ff2b970da111c52b7d0a4d0fac22abc12883c7bf478ecda03a5d983378f5fc59"
+    }
+  ]
+}
