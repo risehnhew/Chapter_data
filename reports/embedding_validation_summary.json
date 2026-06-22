@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "rows": 16429,
+  "embedding_dim": 768,
+  "embedding_dir": "embeddings/xlm-roberta-base"
+}

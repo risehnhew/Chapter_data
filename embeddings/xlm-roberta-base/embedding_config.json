@@ -1,0 +1,21 @@
+{
+  "model_name": "xlm-roberta-base",
+  "pooling": "mean",
+  "device": "cuda",
+  "rows": 16429,
+  "source_rows": 16429,
+  "max_rows": null,
+  "unique_texts_embedded": 19488,
+  "unique_texts_total": 19488,
+  "embedding_dim": 768,
+  "row_arrays": [
+    "expression",
+    "head",
+    "modifier",
+    "paraphrase_canonical",
+    "paraphrase_mean",
+    "mask_head",
+    "mask_modifier",
+    "mask_paraphrase"
+  ]
+}

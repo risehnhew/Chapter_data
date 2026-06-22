@@ -1,29 +1,38 @@
 # Chapter Data
 
-Processed datasets and split files for the Chapter V noun-compound and idiom embedding pipeline.
+Current default dataset and embeddings are based on Maggie's preprocessed files.
 
-## Contents
+## Data
 
-- `data/processed/all_datasets_unified.csv`: normalized unified table before generated splits.
-- `data/processed/all_datasets_unified.parquet`: parquet copy of the normalized unified table.
-- `data/processed/all_datasets_unified_with_splits.csv`: normalized table with generated `split` assignments.
-- `data/splits/`: per-dataset and all-dataset train/dev/test CSV files.
-- `reports/`: download, normalization, split, inventory, and validation reports.
+- `data/maggie/unified.csv`: Maggie's unified input table.
+- `data/maggie/paraphrases.csv`: Maggie's paraphrase candidate table. Reasoning and token-count columns are ignored by the embedding pipeline.
+- `data/processed/unified_enriched.csv`: normalized labels, canonical paraphrases, compositionality bins, and contribution labels.
+- `data/processed/all_with_splits.csv`: generated grouped 70/10/20 split in `split_701020`.
+- `data/processed/unique_texts_for_embedding.csv`: unique isolated text table used for embedding extraction.
 
-## Dataset Counts
+## Embeddings
 
-| dataset | rows | train | dev | test |
-| --- | ---: | ---: | ---: | ---: |
-| nc | 550 | 385 | 55 | 110 |
-| nctti_ncs | 1,383 | 968 | 138 | 277 |
-| semeval2022_task2 | 26,965 | 18,875 | 2,696 | 5,394 |
-| ncimp | 1,844 | 1,290 | 184 | 370 |
-| dice | 2,066 | 1,446 | 206 | 414 |
-| all | 32,808 | 22,964 | 3,279 | 6,565 |
+Embeddings are under `embeddings/xlm-roberta-base/`.
 
-## Notes
+| file | bytes | sha256 | sharded |
+| --- | ---: | --- | --- |
+| `unique_text_embeddings.npz` | 35500973 | `c2ef242ef3ceddffbf6d73dd27fed497491bc22952b9b52f3b3081308d99c44b` | no |
+| `row_embeddings.npz` | 32568341 | `9f3b2a8cbec675fc14037e69719d6b43beee039d0fb76ee70c83690312c1b6e2` | no |
 
-- AdMIRe is intentionally excluded.
-- Raw source data is not included in this repository.
-- Full XLM-R embeddings are included under `embeddings/xlm-roberta-base/all/`. `vectors.npz` is stored as 2 shard(s), total bytes `98594781`, sha256 `b1db00e9ad786a3d18682efa9d9ff82e25994f9adc9fe0e9074e39eb1e270bd6`.
-- The latest validation report is in `reports/final_validation_report.md`.
+If an `.npz` file is sharded, reconstruct it in the embedding directory with:
+
+```bash
+cat row_embeddings.npz.part-* > row_embeddings.npz
+sha256sum -c row_embeddings.npz.sha256
+cat unique_text_embeddings.npz.part-* > unique_text_embeddings.npz
+sha256sum -c unique_text_embeddings.npz.sha256
+```
+
+If the unsharded `.npz` file is present directly, no reconstruction is needed for that file.
+
+## Reports
+
+- `reports/data_preparation_report.md`
+- `reports/embedding_report.md`
+
+The older raw-dataset rebuild outputs are no longer the default dataset in this repository.

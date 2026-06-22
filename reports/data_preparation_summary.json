@@ -1,0 +1,23 @@
+{
+  "rows": 16429,
+  "unique_expression_groups": 2686,
+  "paraphrase_coverage_pct": 99.99,
+  "label_distribution": [
+    [
+      "UNKNOWN",
+      6651
+    ],
+    [
+      "LITERAL",
+      5452
+    ],
+    [
+      "IDIOMATIC",
+      4326
+    ]
+  ],
+  "warnings": [
+    "Ignored non-input paraphrase metadata columns: input_tokens_gpt55pro20260423, input_tokens_gpt5nano20250807, output_tokens_gpt55pro20260423, output_tokens_gpt5nano20250807, reasoning1_gpt55pro20260423, reasoning1_gpt5nano20250807, reasoning_tokens_gpt55pro20260423, reasoning_tokens_gpt5nano20250807, total_tokens_gpt55pro20260423, total_tokens_gpt5nano20250807",
+    "No head/modifier contribution score columns detected; contribution_label is heuristic UNKNOWN."
+  ]
+}
